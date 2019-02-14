@@ -1,6 +1,7 @@
 # -*- coding: cp936 -*-
 from PIL import Image
 import os,sys
+import fileName
 
 
 picMatrix = [
@@ -49,4 +50,6 @@ def save_photo_wall():
     toImage.save('./picturWall.png')
 
 if __name__ == '__main__':
+    fileName.fileRename_()
+    fileName.fileRename()
     save_photo_wall()
